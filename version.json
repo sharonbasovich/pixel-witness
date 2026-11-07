@@ -1,0 +1,19 @@
+{
+  "project": "Pixel Witness",
+  "source_commit": "5f2a5f555b0a35485e27e5bf3a98f01b79b6878d",
+  "source_repository": "https://github.com/sharonbasovich/pixel-witness",
+  "deployment_contents": [
+    {
+      "path": "index.html",
+      "source_path": "standalone.html",
+      "sha256": "7474fdf9ef68fbdc341a14523433c8fadf6fa71f77858a637139731b678ba6ae",
+      "bytes": 59963
+    },
+    {
+      "path": "walkthrough.html",
+      "source_path": "walkthrough.html",
+      "sha256": "bacc2e1f179305647cc896ef111f102ca845fd466c249be5345940a461573069",
+      "bytes": 118587
+    }
+  ]
+}
