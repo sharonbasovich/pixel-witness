@@ -1,0 +1,13 @@
+# Package provenance
+
+Originally packaged privately on November 7, 2026. This public-source preview retains that exact runtime and test content, with a publication-status update to README.md and the package description, plus a .gitignore and regenerated checksum inventory. It is not an entry-ready or submitted artifact. Accepted runtime source corresponds to recorded deployment commit `58f88d1c09c8ddb1698daec36a090a44360e5cb5`. Production served bytes were not retrieved in this run.
+
+Runtime files and existing generated artifacts were preserved byte-for-byte. The package changes are test dependency resolution, portable review adaptations, an aggregate verification entrypoint, dependency metadata, documentation and a literal expected-grid semantic test. It adds no application features.
+
+The package contains no installed dependencies. `package-lock.json` retains the exact existing JSDOM 30.1.1 dependency subtree (37 package entries), including integrity and registry metadata, without unrelated application dependencies. No dependency was newly installed. Node 24.22.1 and npm 11.9.0 were used. Verification used standard package resolution into an explicitly provided existing local dependency tree. This establishes extracted-package operation with existing dependencies, not success of a clean network installation. The declared clean-install workflow is documented in README.md and remains untested here.
+
+Historical tests that compare sibling candidates are excluded. Portable independent walkthrough and reflow checks retain delivered-data, source/bundle, state/export, navigation and CSS contract checks while removing historical sibling comparisons. The four independent session/export review scripts retain their assertions, changing only JSDOM resolution. Test counts are assertions and gates, not distinct real users or devices. Hand-authored semantic fixtures provide expected pixels independent of calling the interpreter to compute expected output, but remain small synthetic examples, not an external oracle or real-world benchmark.
+
+SHA256SUMS inventories every packaged file except itself. `npm test` regenerates and compares standalone.html, walkthrough.html, walkthrough-data.json, walkthrough-sprites.svg and metrics.json byte-for-byte. It also runs the included author, independent and semantic suites. Generated validation receipts are intentionally not distributed as stale evidence.
+
+Publication of this source does not change the existing private deployment or grant a new software license. See README.md for historical desktop/high-zoom acceptance and remaining platform limitations.

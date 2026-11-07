@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "frozenBeforeExecution": true,
+  "purpose": "Synthetic correctness and finite-pool query efficiency, not real sprite accuracy or productivity",
+  "grammar": {"selectors":16,"actions":11,"programs":176},
+  "retention": {"targets":"all 176 programs","inputSeeds":[20000,20001,20002],"heldoutSeeds":[30000,30001,30002,30003,30004,30005,30006,30007]},
+  "queryComparison": {"targetIndices":"0,4,8,...,172 (44 deterministic targets)","initialSeed":40000,"pool":"3 original crafted fixtures and random seeds 1000..1028","maxQueries":6,"strategies":["entropy","seeded-random","fixed-order"],"randomOrderSeed":91000,"success":"all remaining programs predict the same outputs on the entire 32-grid pool; does not imply global equivalence","censoring":"unsolved runs reported separately; mean queries is capped at 6, not an uncensored convergence estimate"},
+  "noSolution": {"cases":"contradictory pair; empty grid to isolated new pixel (outside grammar)","expected":"zero candidates and no sure output"},
+  "gates":["all in-grammar targets retained","all inferred candidates fit every supplied example","every withheld consensus equals target output","contradictions and known out-of-grammar evidence yield zero candidates","invariant tests pass"],
+  "claimsExcluded":["statistical superiority","unrestricted image editing","real-world accuracy","user productivity","novel synthesis algorithm","out-of-grammar detection when evidence also fits an in-grammar program"]
+}

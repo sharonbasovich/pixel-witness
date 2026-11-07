@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import {PROGRAMS,apply,infer,consensus} from './core.mjs';
+import {randomGrid,WITNESS_POOL} from './fixtures.mjs';
+const protocol=JSON.parse(fs.readFileSync(new URL('./protocol.json',import.meta.url),'utf8'));
+const eq=(a,b)=>a.every((v,i)=>v===b[i]);
+let retained=0,evidenceChecks=0,evidenceFailures=0,sure=0,abstained=0,falseSure=0;
+for(const target of PROGRAMS){const examples=protocol.retention.inputSeeds.map(s=>({input:randomGrid(s),output:apply(target,randomGrid(s))})),candidates=infer(examples);retained+=Number(candidates.some(p=>p.id===target.id));for(const c of candidates)for(const e of examples){evidenceChecks++;if(!eq(apply(c,e.input),e.output))evidenceFailures++;}for(const seed of protocol.retention.heldoutSeeds){const input=randomGrid(seed),result=consensus(candidates,input);if(result.output){sure++;if(!eq(result.output,apply(target,input)))falseSure++;}else abstained++;}}
+// Cache exact output strings solely for speed; query selection uses no target outputs.
+const predictions=WITNESS_POOL.map(g=>PROGRAMS.map(p=>apply(p,g).join('')));
+const entropy=(ids,j)=>{const counts=new Map();for(const id of ids){const k=predictions[j][id];counts.set(k,(counts.get(k)||0)+1);}return [...counts.values()].reduce((s,n)=>s-n/ids.length*Math.log2(n/ids.length),0);};
+const solved=ids=>predictions.every(row=>ids.every(i=>row[i]===row[ids[0]]));
+const comparison={};
+for(const strategy of protocol.queryComparison.strategies){const runs=[];for(let ti=0;ti<PROGRAMS.length;ti+=4){const input=randomGrid(40000),output=apply(PROGRAMS[ti],input);let ids=infer([{input,output}]).map(p=>PROGRAMS.indexOf(p));let state=(91000+ti)>>>0;const order=Array.from({length:32},(_,i)=>i);if(strategy==='seeded-random')for(let i=31;i>0;i--){state=(Math.imul(state,1664525)+1013904223)>>>0;const j=state%(i+1);[order[i],order[j]]=[order[j],order[i]];}const used=new Set();let queries=0;while(!solved(ids)&&queries<6){let j;if(strategy==='entropy'){j=order.filter(x=>!used.has(x)).reduce((a,b)=>entropy(ids,b)>entropy(ids,a)+1e-12?b:a);}else j=order.find(x=>!used.has(x));used.add(j);ids=ids.filter(i=>predictions[j][i]===predictions[j][ti]);queries++;}runs.push({target:PROGRAMS[ti].id,queries,solved:solved(ids),remaining:ids.length});}comparison[strategy]={runs:runs.length,solved:runs.filter(r=>r.solved).length,unsolved:runs.filter(r=>!r.solved).length,meanCappedQueries:runs.reduce((s,r)=>s+r.queries,0)/runs.length,maxQueries:Math.max(...runs.map(r=>r.queries)),details:runs};}
+const empty=Array(64).fill(0),one=empty.slice();one[20]=1;const g=randomGrid(50000);const contradiction=infer([{input:g,output:g},{input:g,output:empty}]),outside=infer([{input:empty,output:one}]);
+const metrics={protocolVersion:protocol.version,corpus:'original synthetic 8×8 monochromatic components',programCount:PROGRAMS.length,retention:{targets:176,retained,evidenceChecks,evidenceFailures},withheld:{cases:sure+abstained,sure,abstained,falseSure,scope:'Target is guaranteed in grammar; agreement is conditional on this assumption.'},noSolution:{contradictionCandidates:contradiction.length,outOfGrammarCandidates:outside.length,contradictionSure:consensus(contradiction,g).output!==null,outOfGrammarSure:consensus(outside,g).output!==null},queryComparison:comparison};
+metrics.correctnessGatesPassed=retained===176&&evidenceFailures===0&&falseSure===0&&contradiction.length===0&&outside.length===0;
+fs.writeFileSync(new URL('./metrics.json',import.meta.url),JSON.stringify(metrics,null,2)+'\n');
+console.log(JSON.stringify({...metrics,queryComparison:Object.fromEntries(Object.entries(comparison).map(([k,{details,...v}])=>[k,v]))},null,2));

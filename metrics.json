@@ -1,0 +1,846 @@
+{
+  "protocolVersion": 1,
+  "corpus": "original synthetic 8×8 monochromatic components",
+  "programCount": 176,
+  "retention": {
+    "targets": 176,
+    "retained": 176,
+    "evidenceChecks": 3372,
+    "evidenceFailures": 0
+  },
+  "withheld": {
+    "cases": 1408,
+    "sure": 1090,
+    "abstained": 318,
+    "falseSure": 0,
+    "scope": "Target is guaranteed in grammar; agreement is conditional on this assumption."
+  },
+  "noSolution": {
+    "contradictionCandidates": 0,
+    "outOfGrammarCandidates": 0,
+    "contradictionSure": false,
+    "outOfGrammarSure": false
+  },
+  "queryComparison": {
+    "entropy": {
+      "runs": 44,
+      "solved": 44,
+      "unsolved": 0,
+      "meanCappedQueries": 0.8636363636363636,
+      "maxQueries": 3,
+      "details": [
+        {
+          "target": "all:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "all:outline1",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "all:down",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:recolor2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:left",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:outline3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:right",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "border:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "border:up",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:outline1",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:down",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:recolor2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:left",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:outline3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:right",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color3:erase",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color3:up",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:outline1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:down",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:recolor2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:left",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:outline3",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:right",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "tall:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "tall:up",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:outline1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:down",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:recolor2",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:outline2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:left",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:recolor3",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:outline3",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:right",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "right:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "right:up",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        }
+      ]
+    },
+    "seeded-random": {
+      "runs": 44,
+      "solved": 43,
+      "unsolved": 1,
+      "meanCappedQueries": 1.5454545454545454,
+      "maxQueries": 6,
+      "details": [
+        {
+          "target": "all:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "all:outline1",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "all:down",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:recolor2",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:left",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:outline3",
+          "queries": 4,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:right",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "border:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "border:up",
+          "queries": 6,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:outline1",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:down",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:recolor2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:left",
+          "queries": 6,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:outline3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:right",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color3:erase",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color3:up",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:recolor1",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:outline1",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:down",
+          "queries": 6,
+          "solved": false,
+          "remaining": 2
+        },
+        {
+          "target": "non-singletons:recolor2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:left",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:outline3",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:right",
+          "queries": 4,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "tall:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "tall:up",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:outline1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:down",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:recolor2",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:outline2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:left",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:outline3",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:right",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "right:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "right:up",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        }
+      ]
+    },
+    "fixed-order": {
+      "runs": 44,
+      "solved": 44,
+      "unsolved": 0,
+      "meanCappedQueries": 1.2954545454545454,
+      "maxQueries": 6,
+      "details": [
+        {
+          "target": "all:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "all:outline1",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "all:down",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:recolor2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "largest:left",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:recolor3",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:outline3",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "smallest:right",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "border:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "border:up",
+          "queries": 4,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:outline1",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "interior:down",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:recolor2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color1:left",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:recolor3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:outline3",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color2:right",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color3:erase",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "color3:up",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:recolor1",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:outline1",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "singletons:down",
+          "queries": 6,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:recolor2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:outline2",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "non-singletons:left",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:recolor3",
+          "queries": 4,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:outline3",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "wide:right",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "tall:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "tall:up",
+          "queries": 4,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:recolor1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:outline1",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "top:down",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:recolor2",
+          "queries": 2,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:outline2",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "bottom:left",
+          "queries": 1,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:recolor3",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:outline3",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "left:right",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "right:erase",
+          "queries": 0,
+          "solved": true,
+          "remaining": 1
+        },
+        {
+          "target": "right:up",
+          "queries": 3,
+          "solved": true,
+          "remaining": 1
+        }
+      ]
+    }
+  },
+  "correctnessGatesPassed": true
+}
