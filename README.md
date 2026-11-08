@@ -1,4 +1,44 @@
-# Pixel Witness
+# Pixel Witness: experimental color-qualified editor source
+
+This is experimental source, not a general-availability release or event submission. The frozen runtime intentionally retains its candidate “Private preview” labels; source publication is not a claim of production readiness. The live Pages demo remains the prior baseline unless separately delivered. This source adds an explicit **572-program color language** beside the unchanged **176-program original language**. Choose “Color preview: erase coral singletons” in the workbench to remove coral one-pixel debris while preserving teal/gold singletons and larger coral shapes. Both source modules and the self-contained `standalone.html` run the actual editor.
+
+## Run and verify
+
+Use Node.js 22.22.2+ (supported versions in package.json) and jsdom 30.1.1. `npm test` runs the complete portable suite; `npm run build` regenerates the standalone editor and original-language walkthrough. `node test_color_editor.mjs` runs new source/bundle color integration checks. `sha256sum -c SHA256SUMS` verifies distributed bytes before testing. Generated artifacts must exist and match deterministic regeneration. A missing artifact fails verification.
+
+No new package was installed for author checks: an existing jsdom 30.1.1 installation was reused. A clean dependency install has not been claimed. The package lock remains the pinned baseline dependency contract. Serve this directory with any local static HTTP server to use `index.html`, or serve `standalone.html` alone. No runtime network service, account, API key, or remote inference is required. Bounded native acceptance and independent review are summarized in `EVIDENCE-RECEIPT.md`. Those observations do not establish full platform or accessibility acceptance. For a developer checkout, the declared clean-install workflow is `npm ci --ignore-scripts` followed by `npm test`; a clean network install has not been performed here.
+
+## Languages and compatibility
+
+- Original tasks and original blank sessions use `component-edit-v1`, 176 programs. `core.mjs`, `fixtures.mjs`, `session.mjs`, benchmark/protocol/metrics and the original walkthrough remain unchanged in semantics and data.
+- Color tasks use `color-intersections-v1`, 572 programs: the original 176 plus 396 color intersections. The active language and count stay visible after restore.
+- Legacy v1/v2 evidence restores as original 176. Color evidence uses schema `pixel-witness-evidence`, version 3 and the exact color grammar. Review shows the language/count before replacing examples and any pending drafts. No session is silently migrated or expanded. Cancel preserves drafts. Saved rule IDs and outputs are never trusted: predictions are recomputed in the saved grammar.
+- Color recipes use schema `pixel-witness-recipe`, version 2, exact grammar and a canonical program ID; unknown fields, unsupported versions/grammars and the offline experiment envelope are rejected. The legacy core recipe API remains unchanged; editor code never routes color recipes through it.
+- A restored session is shown as the relevant custom task. To reset it to blank, select another task first, then the blank task; switching to the already selected task is a no-op.
+
+## Exact semantics and limits
+
+Components are same-color four-neighbor regions. A color qualifier intersects the selector on the original grid. **Largest/smallest is ranked among ALL components, ties included, then filtered by color. It is not largest/smallest within that color.** Actions retain original atomic movement/collision, boundary and noncascading outline semantics. Descriptions expose the qualification and global size ranking.
+
+Agreement is conditional on the intended operation being inside the selected finite language. Unsupported intentions can still agree wrongly. The extension expresses coral-singleton removal and interior-teal removal, but not arbitrary multi-step edits, object recognition, size-exactly-two edits or color swapping. A unique surviving program is not certainty. More programs may require more questions.
+
+## Evidence, separated by scope
+
+`metrics.json`, `protocol.json`, `METHODS.md`, `walkthrough.html`, `walkthrough-data.json` and `walkthrough-sprites.svg` describe **only the original 176 grammar**. They are not 572-program validation. `test_color_editor.mjs` is integrated source/bundle regression evidence, not a productivity or real-world accuracy study. Historical `review_*` scripts are retained regression probes, with two bundling adapters updated by the author; they are not a new independent review endorsement.
+
+The separate offline synthetic color experiment found 768 targeted new cases correct, and 175 wrong agreements across four deliberately unsupported intentions. These are not artist tasks, real-world accuracy, or productivity measurements. The summarized independent integration review ran 28,385 newly authored assertions and all 30 aggregate gates. Its additional probes are not distributed in this source payload; `npm test` runs the included reproducible aggregate, not those 28,385 additional assertions. See `EVIDENCE-RECEIPT.md` for scope and limitations.
+
+## Provenance and boundaries
+
+All 42 copied baseline files were verified by Git blob SHA-1 against a fresh GitHub connector tree listing at public commit `5f2a5f555b0a35485e27e5bf3a98f01b79b6878d` before copying. `BASELINE-BLOBS.json` records these canonical identities. The color engine's selector/interpreter/inference/query code comes from the reviewed private experiment; recipe envelopes and human descriptions were adapted for editor integration. `RUNTIME-SHA256SUMS` identifies the frozen runtime sent for separate native acceptance.
+
+This source delivery does not update Pages, the separate draft PR, event materials, prior archives, demonstrations or submissions. No open-source license is granted. Dependency licenses remain with their respective authors.
+
+## Historical public documentation: November 7 keyboard correction
+
+The following is the preserved documentation of the earlier public revision. Its “this correction,” unchanged-file statements, acceptance and non-rerun claims refer only to that historical revision, not the color extension above.
+
+### Historical Pixel Witness overview
 
 Teach an edit. Catch the guess.
 

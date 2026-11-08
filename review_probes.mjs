@@ -86,8 +86,8 @@ click(document.querySelector('[data-edit-batch="1"]'));click($('batch-input-grid
 check(()=>assert.equal($('output-grid').innerHTML,teachingDraft));check(()=>assert.equal($('export-json').disabled,true));click($('discard'));
 // Bundle syntax and exact freshness versus build transformation, without writing implementation.
 const read=n=>fs.readFileSync(new URL(n,import.meta.url),'utf8');
-const code=['core.mjs','fixtures.mjs','session.mjs','app.mjs'].map(n=>read(n).replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function))/g,'')).join('\n');
-const expectedHtml=read('index.html').replace('<link rel="stylesheet" href="style.css">',`<style>${read('style.css')}</style>`).replace('<script type="module" src="app.mjs"></script>',`<script type="module">${code.replace(/<\/script/gi,'<\\/script')}</script>`);
+const {bundleSource,bundleHTML}=await import('./bundle.mjs');
+const code=bundleSource(read),expectedHtml=bundleHTML(read);
 check(()=>assert.equal(read('standalone.html'),expectedHtml));
 check(()=>assert.doesNotThrow(()=>new vm.Script(code)));
 console.log(JSON.stringify({passed:true,totalIndependentChecks:checks,batchEditorAndBundleReviewed:true,scope:'Node/JSDOM only; no rendered-browser acceptance'}));

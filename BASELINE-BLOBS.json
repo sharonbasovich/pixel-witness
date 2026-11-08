@@ -1,0 +1,173 @@
+{
+  "commit": "5f2a5f555b0a35485e27e5bf3a98f01b79b6878d",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "0c12a4ab877b860e3dce111f31642f2ca348c765"
+    },
+    {
+      "path": "METHODS.md",
+      "sha": "afc32961d7f475da62627aaac5b439b2a1760936"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha": "b6428c044a179cf77be44842873ab397a3672f3a"
+    },
+    {
+      "path": "README.md",
+      "sha": "6f7892bdf69bd506294928238818e764fdc64eac"
+    },
+    {
+      "path": "SHA256SUMS",
+      "sha": "bab947ed5c4a4c2675d8eb90e6278f3aec01ad9e"
+    },
+    {
+      "path": "app.mjs",
+      "sha": "cf8fbc6ac5e6590abef2b1dde6a8b7432d80cbb0"
+    },
+    {
+      "path": "benchmark.mjs",
+      "sha": "746fcaa479ae868fe27d7c634f5fe4acbeea256a"
+    },
+    {
+      "path": "build.mjs",
+      "sha": "1167ee0e93cb4f11c5976d9c455c550b2eef0fb8"
+    },
+    {
+      "path": "build_walkthrough.mjs",
+      "sha": "2b83870c76f0477f2fb500637a93e8dd8ee4e037"
+    },
+    {
+      "path": "core.mjs",
+      "sha": "b2d71d64c3944218de57c4e3e74508ad95e8986c"
+    },
+    {
+      "path": "fixtures.mjs",
+      "sha": "8655dbc0ec09eebdb15ed153509a4b25f9586f6b"
+    },
+    {
+      "path": "index.html",
+      "sha": "b026838a1f9abda6ee00cf9cd1d7f1797f7fef10"
+    },
+    {
+      "path": "metrics.json",
+      "sha": "2d7b5fac57bdb71e355d5a00cda9f6b4a944f77a"
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "ed44f925b47ea6b7c722486bb5283d96ac4f8e1e"
+    },
+    {
+      "path": "package.json",
+      "sha": "3e0f63078700e1baa74b3204f6a8fbcede4c010e"
+    },
+    {
+      "path": "protocol.json",
+      "sha": "19a2054a651f02a936360d2b7b41bd31554f90c9"
+    },
+    {
+      "path": "review_batch_session_independent.mjs",
+      "sha": "e41168d67fb700a261fef7cd8d5ebf2367bf1165"
+    },
+    {
+      "path": "review_loss_probes.mjs",
+      "sha": "8e5b25589571001872d2a95631edba365e5a6d9b"
+    },
+    {
+      "path": "review_probes.mjs",
+      "sha": "dd4bb05bdbb577869665bd84be52cd72bc335c65"
+    },
+    {
+      "path": "review_reflow.mjs",
+      "sha": "ebc4eb22a2499676d5d8c2190c1525bc4a07b636"
+    },
+    {
+      "path": "review_restore_probes.mjs",
+      "sha": "59bf33876b4b592ca9923a18cc4c8041fed72e39"
+    },
+    {
+      "path": "review_walkthrough.mjs",
+      "sha": "653d202d33a182fb2f777d1421282e4cc60767c6"
+    },
+    {
+      "path": "sample-batch-session.json",
+      "sha": "ba7da7c4017ad992967d5f2b0e475c63351021d0"
+    },
+    {
+      "path": "sample-evidence.json",
+      "sha": "95f166961eb271bc1f906bfdd949c861f256a35d"
+    },
+    {
+      "path": "session.mjs",
+      "sha": "99e94123b1ccd62583c547aaaf3ba88c95a575bb"
+    },
+    {
+      "path": "standalone.html",
+      "sha": "0938d49195798fd9f4cdaa9034889bc1fb6ba0ad"
+    },
+    {
+      "path": "style.css",
+      "sha": "6a4d5137a25527f6ad53df0fcf4aaac467b0baa2"
+    },
+    {
+      "path": "test_accessibility.mjs",
+      "sha": "67da0ac23b8663928f18ae3fc8476a010fc1daeb"
+    },
+    {
+      "path": "test_batch_session.mjs",
+      "sha": "d469b4d33b4953526ec0100336cbbb8474270a5f"
+    },
+    {
+      "path": "test_core.mjs",
+      "sha": "3d4346d9e3e8a915ca12de46b4a8e9808ee8b693"
+    },
+    {
+      "path": "test_keyboard_flow.mjs",
+      "sha": "b0429550032515c07925e77f3a7ff23e8ee086ab"
+    },
+    {
+      "path": "test_loss_ui.mjs",
+      "sha": "f973f463b1f87c9b5587a80d212a47bd95027124"
+    },
+    {
+      "path": "test_reflow.mjs",
+      "sha": "12a2d7c339c151dd75c0aaa3a8ea284bce76a75d"
+    },
+    {
+      "path": "test_restore_ui.mjs",
+      "sha": "5faf6019e6eb93410e3f7951f3e69f7f2cf96de4"
+    },
+    {
+      "path": "test_semantics.mjs",
+      "sha": "fc1c2e42ad4802cdcd8a507297bbe513e31cc628"
+    },
+    {
+      "path": "test_session.mjs",
+      "sha": "2a51a5e1f4f7a53f4706f5796df85a0c075997c7"
+    },
+    {
+      "path": "test_ui.mjs",
+      "sha": "4610ab5c773f50ad824a8ab1d6efc338f7e325cb"
+    },
+    {
+      "path": "test_walkthrough.mjs",
+      "sha": "325ca0232075cc93213d915acb4d8fc35e7a1ef3"
+    },
+    {
+      "path": "verify.mjs",
+      "sha": "642ccaf7ebd74979da7604855faa0fac3c84916d"
+    },
+    {
+      "path": "walkthrough-data.json",
+      "sha": "53a1311fa5529f59cb7b2abfda440246b3ae6de8"
+    },
+    {
+      "path": "walkthrough-sprites.svg",
+      "sha": "c6333f1e929c784c8247d591f8d5e9a5853ceec0"
+    },
+    {
+      "path": "walkthrough.html",
+      "sha": "1dbbe559cbc68dd570ab50f3ef37e911c00a68de"
+    }
+  ]
+}
