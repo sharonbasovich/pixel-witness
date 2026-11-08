@@ -65,3 +65,11 @@ nav{row-gap:12px}
   .tiny-square{flex-shrink:0;margin-top:4px}
   .resolved{padding:20px;max-width:100%}
 }
+
+/* Read-only evidence diagnostics: disclosures avoid hundreds of eager tables. */
+.conflict-panel{margin-top:18px;border-left:3px solid var(--coral)}
+.conflict-panel .helper{margin:12px 0;max-width:none}
+.conflict-pair{display:flex;gap:24px;flex-wrap:wrap;margin:16px 0}
+.conflict-pair>div{min-width:0}
+.conflict-pair .pixel-grid{width:128px;height:128px;max-width:100%;aspect-ratio:1}
+.conflict-panel .pixel-details{border-top:1px solid var(--line);padding-top:12px}
