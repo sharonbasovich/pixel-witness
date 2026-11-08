@@ -2,14 +2,14 @@
   "name": "pixel-witness",
   "version": "0.1.0",
   "private": true,
-  "description": "Bounded synthetic pixel-rule inference prototype; public source preview",
+  "description": "Private integrated color-qualified editor preview; original176 and color572 explicitly separated",
   "type": "module",
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   },
   "scripts": {
     "test": "node verify.mjs",
-    "build": "node build.mjs && node build_walkthrough.mjs",
+    "build": "node build.mjs && node build_walkthrough.mjs && node build_color_sample.mjs",
     "benchmark": "node benchmark.mjs"
   },
   "devDependencies": {

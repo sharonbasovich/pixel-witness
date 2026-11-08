@@ -1,0 +1,203 @@
+{
+  "passed": true,
+  "node": "v24.22.1",
+  "jsdom": "30.1.1",
+  "checks": [
+    {
+      "file": "test_baseline_pins.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"files\":12,\"scope\":\"Unchanged original176 engine, sessions, fixtures, frozen benchmark/protocol/metrics and walkthrough bytes match canonical public Git blobs.\"}",
+      "error": ""
+    },
+    {
+      "file": "build.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "Built isolated exact-source standalone",
+      "error": ""
+    },
+    {
+      "file": "build_walkthrough.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "Built five-step self-contained walkthrough from exact engine data.",
+      "error": ""
+    },
+    {
+      "file": "build_color_sample.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "",
+      "error": ""
+    },
+    {
+      "file": "benchmark.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"protocolVersion\": 1,\n  \"corpus\": \"original synthetic 8×8 monochromatic components\",\n  \"programCount\": 176,\n  \"retention\": {\n    \"targets\": 176,\n    \"retained\": 176,\n    \"evidenceChecks\": 3372,\n    \"evidenceFailures\": 0\n  },\n  \"withheld\": {\n    \"cases\": 1408,\n    \"sure\": 1090,\n    \"abstained\": 318,\n    \"falseSure\": 0,\n    \"scope\": \"Target is guaranteed in grammar; agreement is conditional on this assumption.\"\n  },\n  \"noSolution\": {\n    \"contradictionCandidates\": 0,\n    \"outOfGrammarCandidates\": 0,\n    \"contradictionSure\": false,\n    \"outOfGrammarSure\": false\n  },\n  \"queryComparison\": {\n    \"entropy\": {\n      \"runs\": 44,\n      \"solved\": 44,\n      \"unsolved\": 0,\n      \"meanCappedQueries\": 0.8636363636363636,\n      \"maxQueries\": 3\n    },\n    \"seeded-random\": {\n      \"runs\": 44,\n      \"solved\": 43,\n      \"unsolved\": 1,\n      \"meanCappedQueries\": 1.5454545454545454,\n      \"maxQueries\": 6\n    },\n    \"fixed-order\": {\n      \"runs\": 44,\n      \"solved\": 44,\n      \"unsolved\": 0,\n      \"meanCappedQueries\": 1.2954545454545454,\n      \"maxQueries\": 6\n    }\n  },\n  \"correctnessGatesPassed\": true\n}",
+      "error": ""
+    },
+    {
+      "file": "test_color_editor.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"checks\":8274,\"scope\":\"Color integration semantics, strict envelopes, legacy176 parity, exact source and standalone state/restore/export/undo/cancel/keyboard JSDOM. No native browser acceptance.\"}",
+      "error": ""
+    },
+    {
+      "file": "test_core.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"assertions\":736}",
+      "error": ""
+    },
+    {
+      "file": "test_semantics.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"semanticExamples\": 37,\n  \"componentMembershipExamples\": 1,\n  \"failures\": 0,\n  \"selectors\": [\n    \"all\",\n    \"border\",\n    \"bottom\",\n    \"color1\",\n    \"color2\",\n    \"color3\",\n    \"interior\",\n    \"largest\",\n    \"left\",\n    \"non-singletons\",\n    \"right\",\n    \"singletons\",\n    \"smallest\",\n    \"tall\",\n    \"top\",\n    \"wide\"\n  ],\n  \"actions\": [\n    \"down\",\n    \"erase\",\n    \"left\",\n    \"outline1\",\n    \"outline2\",\n    \"outline3\",\n    \"recolor1\",\n    \"recolor2\",\n    \"recolor3\",\n    \"right\",\n    \"up\"\n  ],\n  \"limitation\": \"Finite manually authored conformance examples, not exhaustive semantic correctness or real-world accuracy.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "test_session.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"checks\":41,\"scope\":\"Bounded evidence validation, exact export/restore round-trip, untrusted derived-field rejection, and input isolation.\"}",
+      "error": ""
+    },
+    {
+      "file": "test_ui.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"checks\":62,\"scope\":\"JSDOM interactions only; no layout, real browser, download filesystem, keyboard activation, or assistive-technology acceptance.\"}",
+      "error": ""
+    },
+    {
+      "file": "test_restore_ui.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"checks\":34,\"scope\":\"JSDOM restore review, invalid input, cancellation, stale staging, explicit replacement, draft protection, recomputation, and export round-trips. No browser or native clipboard acceptance.\"}",
+      "error": ""
+    },
+    {
+      "file": "test_accessibility.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": 23731,\n  \"ratios\": [\n    {\n      \"selector\": \".live-status\",\n      \"color\": \"#287268\",\n      \"background\": \"#f4f2eb\",\n      \"ratio\": 5.070835881898564\n    },\n    {\n      \"selector\": \".hypothesis strong\",\n      \"color\": \"#287268\",\n      \"background\": \"#fffef8\",\n      \"ratio\": 5.621839143902228\n    },\n    {\n      \"selector\": \".art-tag\",\n      \"color\": \"#52634f\",\n      \"background\": \"#e8ede2\",\n      \"ratio\": 5.417945765879749\n    },\n    {\n      \"selector\": \".art-tag\",\n      \"color\": \"#52634f\",\n      \"background\": \"#dfe5d9\",\n      \"ratio\": 5.020033929806356\n    },\n    {\n      \"selector\": \".uncertain\",\n      \"color\": \"#79602c\",\n      \"background\": \"#fafaf5\",\n      \"ratio\": 5.694112566090781\n    }\n  ],\n  \"scope\": \"Source/bundle JSDOM semantics, explicit focus management after click, complete coordinate/color/change data, all disputed predictions, repeated disclosures, disabled/rejected choices and contrast math. Not native keyboard, rendered layout or screen-reader certification.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "test_keyboard_flow.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": 100,\n  \"scope\": \"Source and regenerated bundle in local JSDOM: focus-based canvas reentry, one roving tab stop, arrow boundaries, no focus-only painting, native activation keys left unhandled, focused/unfocused discard, repeated/final/disabled undo, populated/empty import and batch cancel. Does not simulate browser Tab traversal, native pointer focus, native Space/Enter click synthesis, rendering or screen readers.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "test_reflow.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": 247,\n  \"widths\": [\n    291,\n    295,\n    320,\n    390,\n    480,\n    582,\n    760,\n    800,\n    1000,\n    1180\n  ],\n  \"scope\": \"CSS cascade/source contracts and fixed-size width budgets on source and bundle DOM, including batch editor. Not actual browser layout, scrollWidth, zoom, touch or assistive technology acceptance.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "test_loss_ui.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"checks\":128,\"surfaces\":[{\"surface\":\"source\",\"listenerAdditions\":7,\"listenerRemovals\":7},{\"surface\":\"bundle\",\"listenerAdditions\":7,\"listenerRemovals\":7}],\"scope\":\"Local JSDOM state and synthetic cancelable beforeunload events. Does not establish native browser dialogs, download persistence, page reload behavior or assistive-technology acceptance.\"}",
+      "error": ""
+    },
+    {
+      "file": "test_batch_session.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"checks\":131,\"surfaces\":[{\"surface\":\"source\"},{\"surface\":\"standalone\"}],\"scope\":\"Parser and JSDOM source/bundle state, generated Blob text and exact round-trip only. Not native download persistence or real browser acceptance.\"}",
+      "error": ""
+    },
+    {
+      "file": "test_walkthrough.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "PASS: exact engine narrative, 11 complete diagrams and coordinate tables, real workbench SVG bytes, bounded navigation/focus/status semantics, reduced-motion source and no-JS fallback. Not a browser layout, keyboard activation or screen-reader acceptance test.",
+      "error": ""
+    },
+    {
+      "file": "review_probes.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\"passed\":true,\"checks\":895,\"benchmarkMatchesSavedMetrics\":true,\"scope\":\"Independent Node/JSDOM probes; no browser/render acceptance\"}\n{\"passed\":true,\"totalIndependentChecks\":916,\"batchEditorAndBundleReviewed\":true,\"scope\":\"Node/JSDOM only; no rendered-browser acceptance\"}",
+      "error": ""
+    },
+    {
+      "file": "review_restore_probes.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": 113,\n  \"surfaces\": [\n    {\n      \"surface\": \"source\",\n      \"warningAssociated\": true\n    },\n    {\n      \"surface\": \"standalone\",\n      \"warningAssociated\": true\n    }\n  ],\n  \"openFindings\": [],\n  \"scope\": \"Local parser and source/bundled JSDOM semantics only; no browser, screen reader, native download or visual acceptance.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "review_loss_probes.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": 202,\n  \"observations\": [\n    {\n      \"surface\": \"source\",\n      \"evidence\": \"0 saved examples\",\n      \"exportDisabled\": false,\n      \"status\": \"Your changes exist only in this tab. Learn or discard pending example edits, save or cancel pending batch edits, then export evidence JSON to keep a copy.\",\n      \"switchWarning\": \"Changing tasks replaces your batch inputs and unsaved canvas edits. To keep them, choose Keep editing, learn or discard pending example edits, save or cancel pending batch edits, then export evidence JSON.\",\n      \"exportHelp\": \"Evidence JSON can preserve your three batch inputs with no learned examples. Learn or discard pending example edits and save or cancel pending batch edits first. No output is inferred until you teach an edit.\"\n    },\n    {\n      \"surface\": \"standalone\",\n      \"evidence\": \"0 saved examples\",\n      \"exportDisabled\": false,\n      \"status\": \"Your changes exist only in this tab. Learn or discard pending example edits, save or cancel pending batch edits, then export evidence JSON to keep a copy.\",\n      \"switchWarning\": \"Changing tasks replaces your batch inputs and unsaved canvas edits. To keep them, choose Keep editing, learn or discard pending example edits, save or cancel pending batch edits, then export evidence JSON.\",\n      \"exportHelp\": \"Evidence JSON can preserve your three batch inputs with no learned examples. Learn or discard pending example edits and save or cancel pending batch edits first. No output is inferred until you teach an edit.\"\n    }\n  ],\n  \"scope\": \"JSDOM/source and bundle only. Native leave prompts, browser behavior, accessibility acceptance, layout, keyboard, touch and device testing remain pending.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "review_batch_session_independent.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": 172,\n  \"surfaces\": [\n    {\n      \"surface\": \"source\",\n      \"passed\": true\n    },\n    {\n      \"surface\": \"bundle\",\n      \"passed\": true\n    }\n  ],\n  \"scope\": \"Independent parser and JSDOM source/bundle review. No real browser, native download, beforeunload prompt, layout, assistive technology, or device acceptance.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "review_walkthrough.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"assertions\": 1758,\n  \"initial\": [\n    \"smallest:erase\",\n    \"color1:erase\",\n    \"singletons:erase\"\n  ],\n  \"queryIndex\": 1,\n  \"learned\": [\n    \"singletons:erase\"\n  ],\n  \"diagramCount\": 11,\n  \"diagramCells\": 704,\n  \"svgColoredPixels\": 40,\n  \"svgSha256\": \"ec6bceb7e00e12774564c03280ff2edf284316c86b5597e98101943333a8e977\",\n  \"htmlSha256\": \"bacc2e1f179305647cc896ef111f102ca845fd466c249be5345940a461573069\",\n  \"parity\": {},\n  \"scope\": \"Independent engine and delivered DOM/SVG checks, real app event handlers in JSDOM, navigation state/focus/revisit/fresh-open; no native rendering, keyboard activation, screen-reader, mobile, browser history, leave-warning or download filesystem acceptance.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "review_reflow.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": 58,\n  \"preservedHashes\": {},\n  \"cssHash\": \"ae2c86082586e8064bb862553359961941443147062795c0518a4e9a023ad307\",\n  \"scenarios\": [\n    {\n      \"scenario\": \"debris\",\n      \"passed\": true\n    },\n    {\n      \"scenario\": \"outline\",\n      \"passed\": true\n    },\n    {\n      \"scenario\": \"edge\",\n      \"passed\": true\n    },\n    {\n      \"scenario\": \"coral\",\n      \"passed\": true\n    },\n    {\n      \"scenario\": \"color-custom\",\n      \"passed\": true\n    },\n    {\n      \"scenario\": \"custom\",\n      \"passed\": true\n    }\n  ],\n  \"widthBudgets\": [\n    {\n      \"width\": 291,\n      \"teachContent\": 229,\n      \"teachingRequired\": 168,\n      \"batchCardContent\": 197\n    },\n    {\n      \"width\": 295,\n      \"teachContent\": 233,\n      \"teachingRequired\": 168,\n      \"batchCardContent\": 201\n    },\n    {\n      \"width\": 320,\n      \"teachContent\": 258,\n      \"teachingRequired\": 168,\n      \"batchCardContent\": 226\n    },\n    {\n      \"width\": 390,\n      \"teachContent\": 328,\n      \"teachingRequired\": 168,\n      \"batchCardContent\": 296\n    },\n    {\n      \"width\": 480,\n      \"teachContent\": 398,\n      \"teachingRequired\": 168,\n      \"batchCardContent\": 366\n    },\n    {\n      \"width\": 481,\n      \"teachContent\": 399,\n      \"teachingRequired\": 382,\n      \"batchCardContent\": 367\n    },\n    {\n      \"width\": 590,\n      \"teachContent\": 508,\n      \"teachingRequired\": 382,\n      \"batchCardContent\": 476\n    },\n    {\n      \"width\": 760,\n      \"teachContent\": 678,\n      \"teachingRequired\": 382,\n      \"batchCardContent\": 646\n    },\n    {\n      \"width\": 800,\n      \"teachContent\": 698,\n      \"teachingRequired\": 308,\n      \"batchCardContent\": 191.33333333333334\n    },\n    {\n      \"width\": 1000,\n      \"teachContent\": 898,\n      \"teachingRequired\": 308,\n      \"batchCardContent\": 258\n    },\n    {\n      \"width\": 1001,\n      \"teachContent\": 453.4545454545454,\n      \"teachingRequired\": 366,\n      \"batchCardContent\": 255.66666666666669\n    },\n    {\n      \"width\": 1180,\n      \"teachContent\": 551.090909090909,\n      \"teachingRequired\": 366,\n      \"batchCardContent\": 315.3333333333333\n    }\n  ],\n  \"scope\": \"Independent byte parity, VM/JSDOM export/state tests and source CSS cascade/budget checks. No rendered layout, scrollWidth, zoom, browser or native download acceptance.\"\n}",
+      "error": ""
+    },
+    {
+      "file": "standalone.html",
+      "passed": true,
+      "scope": "Exact regeneration parity with distributed artifact"
+    },
+    {
+      "file": "walkthrough.html",
+      "passed": true,
+      "scope": "Exact regeneration parity with distributed artifact"
+    },
+    {
+      "file": "walkthrough-data.json",
+      "passed": true,
+      "scope": "Exact regeneration parity with distributed artifact"
+    },
+    {
+      "file": "walkthrough-sprites.svg",
+      "passed": true,
+      "scope": "Exact regeneration parity with distributed artifact"
+    },
+    {
+      "file": "metrics.json",
+      "passed": true,
+      "scope": "Exact regeneration parity with distributed artifact"
+    },
+    {
+      "file": "sample-color-session.json",
+      "passed": true,
+      "scope": "Exact regeneration parity with distributed artifact"
+    },
+    {
+      "file": "metrics.json",
+      "passed": true
+    }
+  ],
+  "scope": "Portable Node/JSDOM source, state, export and synthetic benchmark checks. CSS contracts are not rendering; no native device, browser download, screen reader or hosted acceptance in this run."
+}

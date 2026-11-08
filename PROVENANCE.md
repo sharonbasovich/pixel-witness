@@ -1,3 +1,21 @@
+# Experimental color source provenance
+
+Base commit: https://github.com/sharonbasovich/pixel-witness/commit/5f2a5f555b0a35485e27e5bf3a98f01b79b6878d
+
+Base tree: `5fe67bd1f30e750db5f318da22aa2f25055185c0`.
+
+All 42 original public files were recovered and verified by canonical Git blob SHA-1 before staging. `BASELINE-BLOBS.json` records their original identities. Unchanged files are preserved byte-for-byte. This is an additive source revision based on that commit, not a replacement of repository history. The separate draft PR is outside this delivery.
+
+The color interpreter, inference and query behavior originated in a separately reviewed synthetic experiment. Integration adapts imports, descriptions and strict editor recipe/session envelopes. Original176 engine, sessions, fixtures, metrics, protocol, methodology, samples and walkthrough remain byte-identical to the pinned baseline. Original176 metrics are not a color572 benchmark.
+
+`RUNTIME-SHA256SUMS` records frozen runtime bytes, including candidate “Private preview” labels. This is experimental source, not general availability. The live Pages demo remains the prior baseline unless separately delivered. `VALIDATION.json` records the complete portable aggregate rerun on this staged source. `EVIDENCE-RECEIPT.md` summarizes bounded additional independent and native observations; private logs, screenshots and downloaded files are not distributed. No Actions workflow is added or run.
+
+`SHA256SUMS` inventories every distributed file except itself. Build/test-generated receipts not listed there are not payload members. Dependencies are not bundled. Validation reuses an existing JSDOM 30.1.1 installation with Node 24.22.1; a clean network install is not claimed. The unchanged lockfile remains the declared dependency contract. Source publication grants no new license and does not change deployments or event materials.
+
+## Historical public provenance: November 7 keyboard correction
+
+The following record is preserved from the baseline. Its statements about changes and tests refer to that earlier correction only, not the color source revision above.
+
 # Package provenance
 
 This bounded keyboard-focus correction is based on public source commit `101d28e482ba8c18bd48f65df6607738398d7f0e` at https://github.com/sharonbasovich/pixel-witness. It is a public-source preview, not an entry-ready or submitted artifact. The earlier package originated privately on November 7, 2026, with recorded private runtime source commit `58f88d1c09c8ddb1698daec36a090a44360e5cb5`. This correction does not change that deployment; production served bytes were not retrieved for this package.
