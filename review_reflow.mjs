@@ -10,7 +10,7 @@ const root=path.dirname(fileURLToPath(import.meta.url)),candidate=root;
 const read=(dir,file)=>fs.readFileSync(path.join(dir,file),'utf8');
 let checks=0;function equal(a,b,label){assert.deepEqual(a,b,label);checks++;}
 const hashes={}; // Historical sibling baseline checks excluded.
-const code=(dir)=>['core.mjs','fixtures.mjs','session.mjs','app.mjs'].map(f=>read(dir,f).replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function))/g,'')).join('\n');
+const code=(dir)=>['core.mjs','fixtures.mjs','session.mjs','diagnose.mjs','app.mjs'].map(f=>read(dir,f).replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function))/g,'')).join('\n');
 const expected=read(candidate,'index.html').replace('<link rel="stylesheet" href="style.css">',`<style>${read(candidate,'style.css')}</style>`).replace('<script type="module" src="app.mjs"></script>',`<script type="module">${code(candidate).replace(/<\/script/gi,'<\\/script')}</script>`);
 equal(read(candidate,'standalone.html'),expected,'full standalone exact reconstruction');
 const results=[];
